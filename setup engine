@@ -1,0 +1,134 @@
+# Game Engine Setup Guide
+
+## Table of Contents
+1. [Requirements](#requirements)
+2. [Clone the Repository](#clone-the-repository)
+3. [Install Dependencies](#install-dependencies)
+4. [Run Setup Script](#run-setup-script)
+5. [Build the Project](#build-the-project)
+6. [Folder Structure](#folder-structure)
+7. [License](#license)
+8. [Additional Information](#additional-information)
+
+## Requirements
+- Git
+- CMake (version 3.10 or higher)
+- C++ compiler (e.g., GCC or Clang)
+
+## Clone the Repository
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/game_engine.git
+cd game_engine
+Install Dependencies
+Ubuntu/Debian
+Run the following commands to install the required dependencies:
+
+bash
+Code kopiëren
+sudo apt update
+sudo apt install -y build-essential cmake git libglfw3 libglfw3-dev libglew-dev libglm-dev libopengl-dev
+Clone the STB Image library:
+
+bash
+Code kopiëren
+git clone https://github.com/nothings/stb.git ./stb
+Required Libraries
+You can check and download required dependencies from the following links:
+
+GLFW
+GLEW
+GLM
+STB Image
+Run Setup Script
+Make the setup script executable and run it:
+
+bash
+Code kopiëren
+chmod +x setup.sh
+./setup.sh
+The setup script will handle any additional steps, such as downloading and setting up necessary libraries.
+
+Build the Project
+Build the project with the following steps:
+
+bash
+Code kopiëren
+mkdir build && cd build
+cmake ..
+make
+./GameEngine
+Folder Structure
+The basic folder structure of the project is as follows:
+
+plaintext
+Code kopiëren
+game_engine/
+├── src/
+│   ├── core/
+│   ├── assets/
+│   ├── graphics/
+│   ├── animation/
+│   ├── vfx/
+│   ├── ui/
+│   ├── camera/
+│   ├── utils/
+│   ├── events/
+│   ├── loading/
+│   └── input/
+├── assets/
+│   ├── models/
+│   ├── textures/
+│   ├── shaders/
+│   └── sounds/
+├── tools/
+├── bin/
+├── include/
+├── CMakeLists.txt
+└── setup.sh
+License
+This project is licensed under the MIT License. See the LICENSE file for full details.
+
+Additional Information
+CMakeLists.txt: Contains the build configuration for CMake and links to required dependencies.
+setup.sh: This script automatically downloads required libraries like STB Image and prepares the project for building.
+Contributing
+Feel free to contribute by opening issues, forking the repository, and submitting pull requests. If you encounter any problems, open an issue, and we will address it as soon as possible.
+
+For more information on contributing, visit the GitHub repository.
+
+Links to Required Tools
+CMake
+Git
+GLFW
+GLEW
+GLM
+STB Image
+MIT License
+Additional Setup
+After cloning the repository, make sure to run the setup script to ensure all dependencies are downloaded and installed correctly.
+The build folder will contain the compiled binaries once the project is built with CMake and Make.
+For more details about the project, refer to the individual README files inside the respective directories or visit the official repositories linked above.
+
+Note: Replace YOUR_USERNAME with your actual GitHub username in the links provided to ensure they point to your repository.
+
+markdown
+Code kopiëren
+
+### Wat is veranderd:
+- Alle **HTTPS-links** zijn toegevoegd, zoals naar:
+  - [GitHub Repository](https://github.com/YOUR_USERNAME/game_engine) (vervang `YOUR_USERNAME` met jouw GitHub-gebruikersnaam)
+  - [CMake](https://cmake.org/download/)
+  - [Git](https://git-scm.com/downloads)
+  - [GLFW](https://www.glfw.org/)
+  - [GLEW](https://glew.sourceforge.net/)
+  - [GLM](https://github.com/g-truc/glm)
+  - [STB Image](https://github.com/nothings/stb)
+  - [MIT License](https://opensource.org/licenses/MIT)
+
+### Wat je nu kunt doen:
+1. **Verander** `YOUR_USERNAME` in je eigen GitHub-gebruikersnaam om de juiste repository- en linkverwijzingen te genereren.
+2. **Kopieer en plak** dit bestand als **README.md** in de hoofdmap van je project.
+
+Laat me weten als je meer links nodig hebt of andere aanpassingen wilt!
