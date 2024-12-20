@@ -1,3 +1,5 @@
+markdown
+
 # Game Engine Setup Guide
 
 ## Table of Contents
@@ -26,13 +28,13 @@ Ubuntu/Debian
 Run the following commands to install the required dependencies:
 
 bash
-Code kopiëren
+
 sudo apt update
 sudo apt install -y build-essential cmake git libglfw3 libglfw3-dev libglew-dev libglm-dev libopengl-dev
 Clone the STB Image library:
 
 bash
-Code kopiëren
+
 git clone https://github.com/nothings/stb.git ./stb
 Required Libraries
 You can check and download required dependencies from the following links:
@@ -45,16 +47,17 @@ Run Setup Script
 Make the setup script executable and run it:
 
 bash
-Code kopiëren
+
 chmod +x setup.sh
 ./setup.sh
+
 The setup script will handle any additional steps, such as downloading and setting up necessary libraries.
 
 Build the Project
 Build the project with the following steps:
 
 bash
-Code kopiëren
+
 mkdir build && cd build
 cmake ..
 make
@@ -63,7 +66,7 @@ Folder Structure
 The basic folder structure of the project is as follows:
 
 plaintext
-Code kopiëren
+
 game_engine/
 ├── src/
 │   ├── core/
@@ -86,7 +89,8 @@ game_engine/
 ├── bin/
 ├── include/
 ├── CMakeLists.txt
-└── setup.sh
+
+
 License
 This project is licensed under the MIT License. See the LICENSE file for full details.
 
@@ -106,29 +110,25 @@ GLEW
 GLM
 STB Image
 MIT License
+
 Additional Setup
+
 After cloning the repository, make sure to run the setup script to ensure all dependencies are downloaded and installed correctly.
 The build folder will contain the compiled binaries once the project is built with CMake and Make.
+If you are unsure or encounter any issues during the setup, you can search on YouTube for tutorial videos or use ChatGPT for clarification.
+
 For more details about the project, refer to the individual README files inside the respective directories or visit the official repositories linked above.
 
 Note: Replace YOUR_USERNAME with your actual GitHub username in the links provided to ensure they point to your repository.
 
-markdown
-Code kopiëren
+vbnet
 
-### Wat is veranderd:
-- Alle **HTTPS-links** zijn toegevoegd, zoals naar:
-  - [GitHub Repository](https://github.com/YOUR_USERNAME/game_engine) (vervang `YOUR_USERNAME` met jouw GitHub-gebruikersnaam)
-  - [CMake](https://cmake.org/download/)
-  - [Git](https://git-scm.com/downloads)
-  - [GLFW](https://www.glfw.org/)
-  - [GLEW](https://glew.sourceforge.net/)
-  - [GLM](https://github.com/g-truc/glm)
-  - [STB Image](https://github.com/nothings/stb)
-  - [MIT License](https://opensource.org/licenses/MIT)
+### Changes Summary:
+- The language has been switched to English.
+- I’ve added a note encouraging users to check YouTube or ChatGPT if they don’t understand certain steps.
+- No watermarks or changes to the files themselves.
 
-### Wat je nu kunt doen:
-1. **Verander** `YOUR_USERNAME` in je eigen GitHub-gebruikersnaam om de juiste repository- en linkverwijzingen te genereren.
-2. **Kopieer en plak** dit bestand als **README.md** in de hoofdmap van je project.
+### What’s next:
+- Make sure to **replace** `YOUR_USERNAME` with your actual GitHub username for the repository URL.
+- Save this file as **README.md** in the root of your project directory.
 
-Laat me weten als je meer links nodig hebt of andere aanpassingen wilt!
