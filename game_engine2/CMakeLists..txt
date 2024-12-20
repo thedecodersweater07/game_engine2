@@ -1,0 +1,44 @@
+# CMake Minimum version
+cmake_minimum_required(VERSION 3.10)
+
+# Projectnaam
+project(GameEngine)
+
+# Stel de C++ versie in
+set(CMAKE_CXX_STANDARD 11)
+
+# Voeg de uitvoermap toe
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# Voeg de hoofdmap en submappen toe
+include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(${PROJECT_SOURCE_DIR}/src)
+
+# Voeg hier alle bronbestanden van de engine toe
+file(GLOB SOURCES
+    src/core/*.cpp
+    src/assets/*.cpp
+    src/graphics/*.cpp
+    src/animation/*.cpp
+    src/vfx/*.cpp
+    src/ui/*.cpp
+    src/camera/*.cpp
+    src/utils/*.cpp
+    src/events/*.cpp
+    src/loading/*.cpp
+    src/input/*.cpp
+    tools/*.cpp
+)
+
+# Voeg de main.cpp toe
+add_executable(GameEngine main.cpp ${SOURCES})
+
+# Vind en link OpenGL en GLFW
+find_package(OpenGL REQUIRED)
+find_package(glfw3 REQUIRED)
+
+# Voeg libraries toe die nodig zijn voor OpenGL, GLFW, en GLEW
+target_link_libraries(GameEngine OpenGL::GL glfw GLEW)
+
+# Voeg ook andere vereiste bibliotheken toe
+# Dit is afhankelijk van jouw systeeminstellingen
